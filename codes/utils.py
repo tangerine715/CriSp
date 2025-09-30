@@ -135,7 +135,7 @@ def get_shoeid_str(name):
 
 def load_model(save_file, model, optimizer=None):
     print('==> Loading ', save_file)
-    file = torch.load(save_file)
+    file = torch.load(save_file, weights_only=False)
     model.load_state_dict(file['model'])
     if optimizer:
         optimizer.load_state_dict(file['optimizer'])
