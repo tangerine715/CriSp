@@ -1,8 +1,8 @@
 import numpy as np
 import cv2
 import os
-from codes.utils import get_invalid_tensor
-from codes.dataset.utils import read_image, image_to_channels
+from utils import get_invalid_tensor
+from dataset.utils import read_image, image_to_channels
 
 class RefDb(object):
 

@@ -4,11 +4,11 @@ import os
 import random
 import numpy as np
 import torch
-from codes.utils import load_model
-from codes.options import Options
-from codes.retrieval import val_retrieval_fid, val_retrieval_csafe, \
+from utils import load_model
+from options import Options
+from retrieval import val_retrieval_fid, val_retrieval_csafe, \
     prepare_datasets_fid, prepare_datasets_csafe, Metric
-from codes.model import SupConResNet
+from model import SupConResNet
 
 def seed_everything(seed):
     random.seed(seed)

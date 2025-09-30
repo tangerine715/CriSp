@@ -1,10 +1,10 @@
 import torch
-from codes.utils import prepare_input, get_features
-from codes.utils import get_shoeid_str
-from codes.metric import Hit_At_K, MAP_At_K
-from codes.utils import AverageMeter, save_tensor_grid, valid_tensor, get_compressed_mask
-from codes.dataset.utils import image_to_channels, read_image
-import codes.dataset as dataset
+from utils import prepare_input, get_features
+from utils import get_shoeid_str
+from metric import Hit_At_K, MAP_At_K
+from utils import AverageMeter, save_tensor_grid, valid_tensor, get_compressed_mask
+from dataset.utils import image_to_channels, read_image
+import dataset as dataset
 import torch as th
 import time, os, cv2
 import numpy as np
