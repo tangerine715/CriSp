@@ -11,6 +11,7 @@ class RefDb(object):
         self.input_dir = input_dir
         self.opt = opt
 
+
         image_dir = os.path.join(self.input_dir, image_dir)
         self.get_image = os.path.exists(image_dir)*get_image
         mask_dir = os.path.join(self.input_dir, 'mask')
